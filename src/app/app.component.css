@@ -1,0 +1,63 @@
+.outer-wrapper {
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+    max-width: 100%;
+    max-height: fit-content;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;  /* Permet le scroll horizontal */
+    max-height: 66.4vh;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid rgb(177, 177, 177);
+  }
+  
+  table th {
+    background-color: #133b5c;
+    color: rgb(241, 245, 179);
+    position: sticky;
+    top: 0; /* Garde l'en-tête visible */
+    z-index: 10;
+    font-weight: normal;
+  }
+  
+  /* Fixer la première colonne (name) */
+  .name-column {
+    position: sticky;
+    left: 0;
+    background-color: #f4f4f4;
+    z-index: 1; /* Pour superposer la colonne de nom */
+  }
+  
+  table td {
+    font-size: 14px;
+    padding: 15px;
+  }
+  
+  table tr td:first-child {
+    font-weight: bold;
+  }
+  
+  /* Fixer le header de la première colonne (Nom) */
+  table th:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #133b5c;
+    color: rgb(241, 245, 179);
+    z-index: 11; /* Placer l'en-tête au-dessus du reste */
+  }
+  
